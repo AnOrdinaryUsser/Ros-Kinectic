@@ -5,23 +5,31 @@ Para instalar Ros Kinetic debemos abrir una terminal y desde alli pegar el sigui
 sudo apt-get install ros-kinetic-full-desktop
 
 ## Launching a map file
-roscore 
-roslaunch turtlebot_bringup minimal.launch
-roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/turtlebot/map.yaml
-rosrun rviz rviz
+roscore<br> 
+roslaunch turtlebot_bringup minimal.launch<br> 
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/turtlebot/map.yaml<br> 
+rosrun rviz rviz<br> 
 
 ## Install sound_play
-sudo apt-get install ros-kinetic-sound-play
+sudo apt-get install ros-kinetic-sound-play<br> 
 
 ## Commands for sound_play
-rosrun sound_play soundplay_node.py - lanzar el nodo del sound_play
-/opt/ros/melodic/lib/sound_play/play.py PathDelArchivo volumen (maximo 1)
-rosrun sound_play say.py "frase"
-pactl -- set-sink-volume 0 500% - Para cambiar el sonido por defecto del ubuntu
-https://anuragbhandari.com/coding-tech/fixing-headphone-jack-in-ubuntu-20-04-1755/
+rosrun sound_play soundplay_node.py - lanzar el nodo del sound_play<br> 
+/opt/ros/melodic/lib/sound_play/play.py PathDelArchivo volumen (maximo 1)<br> 
+rosrun sound_play say.py "frase"<br> 
+pactl -- set-sink-volume 0 500% - Para cambiar el sonido por defecto del ubuntu<br> 
+https://anuragbhandari.com/coding-tech/fixing-headphone-jack-in-ubuntu-20-04-1755/<br> 
 
 ## Http Server with Python
-source ~/venv/bin/activate
-Go with cd to the folder of the webpage
-Launch the server with python -m http.server
-roslaunch rosbridge_server rosbridge_websocket.launch
+source ~/venv/bin/activate<br> 
+Go with cd to the folder of the webpage<br> 
+Launch the server with python -m http.server<br> 
+roslaunch rosbridge_server rosbridge_websocket.launch<br> 
+
+## Creating a map file
+roscore<br> 
+roslaunch turtlebot_bringup minimal.launch<br> 
+roslaunch turtlebot_navigation gmapping_demo.launch<br> 
+rosrun rviz rviz<br> 
+roslaunch kobuki<br> 
+roslaunch kobuki_keyop safe_keyop.launch --screen<br> 
