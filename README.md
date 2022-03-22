@@ -33,3 +33,8 @@ roslaunch turtlebot_navigation gmapping_demo.launch<br>
 rosrun rviz rviz<br> 
 roslaunch kobuki<br> 
 roslaunch kobuki_keyop safe_keyop.launch --screen<br> 
+
+## Listener to the commands
+python listener.py
+python go_one_point.py
+rostopic echo/recognizer/output
