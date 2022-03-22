@@ -31,10 +31,9 @@ roscore<br>
 roslaunch turtlebot_bringup minimal.launch<br> 
 roslaunch turtlebot_navigation gmapping_demo.launch<br> 
 rosrun rviz rviz<br> 
-roslaunch kobuki<br> 
-roslaunch kobuki_keyop safe_keyop.launch --screen<br> 
+roslaunch turtlebot_teleop keyboard_teleop.launch<br>
 
 ## Listener to the commands
-python listener.py
-python go_one_point.py
-rostopic echo/recognizer/output
+python listener.py<br>
+python go_one_point.py<br>
+rostopic echo/recognizer/output<br>
