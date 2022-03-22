@@ -32,8 +32,14 @@ roslaunch turtlebot_bringup minimal.launch<br>
 roslaunch turtlebot_navigation gmapping_demo.launch<br> 
 rosrun rviz rviz<br> 
 roslaunch turtlebot_teleop keyboard_teleop.launch<br>
-Or if you want to use a PS3 joystick:<br>
-roslaunch turtlebot_teleop ps3_teleop.launch<br>
+```diff
+! Or if you want to use a PS3 joystick:<br>
+! roslaunch turtlebot_teleop ps3_teleop.launch<br>
+```
+
+<span style="color:red;">Word up</span>
+
+<span style="color:blue">some *blue* text</span>.
 
 ## Listener to the commands
 python listener.py<br>
