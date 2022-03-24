@@ -45,3 +45,8 @@ roslaunch turtlebot_teleop ps3_teleop.launch
 python listener.py<br>
 python go_one_point.py<br>
 rostopic echo/recognizer/output<br>
+
+## ROS2D & NAV2DJS
+To see an arrow with robot_pose, use this command:<br>
+rosrun robot_pose_publisher robot_pose_publisher<br>
+
