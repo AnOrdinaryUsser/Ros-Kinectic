@@ -50,3 +50,9 @@ rostopic echo/recognizer/output<br>
 To see an arrow with robot_pose, use this command:<br>
 rosrun robot_pose_publisher robot_pose_publisher<br>
 
+## RosnodeJS
+rosnodejs also provides the ability to dynamically create message classes on the fly without the need to run catkin_make
+´´´dif
+rosnodejs.initNode('my_node',
+                   { onTheFly: true });
+´´´
