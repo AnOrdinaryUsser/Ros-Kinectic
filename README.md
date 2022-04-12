@@ -1,8 +1,25 @@
 ### Ros-Kinectic
 
 ## Install Ros Kinetic
-Para instalar Ros Kinetic debemos abrir una terminal y desde alli pegar el siguiente comando:
-sudo apt-get install ros-kinetic-full-desktop
+Para instalar Ros Kinetic debemos abrir una terminal y desde alli pegar el siguiente comando:<br>
+```bash 
+sudo apt-get install ros-kinetic-full-desktop 
+```
+## Creating a map file
+`roscore`<br> 
+`roslaunch turtlebot_bringup minimal.launch`<br> 
+`roslaunch turtlebot_navigation gmapping_demo.launch`<br> 
+`rosrun rviz rviz`<br> 
+`roslaunch turtlebot_teleop keyboard_teleop.launch`<br>
+Or if you want to use a PS3 joystick:<br> 
+
+```diff
+roslaunch turtlebot_teleop ps3_teleop.launch
+```
+Save map:<br>
+rosrun map_server map_saver -f mymap<br>
+
+<!-- http://library.isr.ist.utl.pt/docs/roswiki/turtlebot_teleop(2f)Tutorials(2f)TurtleBot(20)Joystick(20)Teleoperation.html -->
 
 ## Launching a map file
 roscore<br> 
@@ -26,21 +43,7 @@ Go with cd to the folder of the webpage<br>
 Launch the server with python -m http.server<br> 
 roslaunch rosbridge_server rosbridge_websocket.launch<br> 
 
-## Creating a map file
-roscore<br> 
-roslaunch turtlebot_bringup minimal.launch<br> 
-roslaunch turtlebot_navigation gmapping_demo.launch<br> 
-rosrun rviz rviz<br> 
-roslaunch turtlebot_teleop keyboard_teleop.launch<br>
-Or if you want to use a PS3 joystick:<br> 
 
-```diff
-roslaunch turtlebot_teleop ps3_teleop.launch
-```
-Save map:<br>
-rosrun map_server map_saver -f mymap<br>
-
-<!-- http://library.isr.ist.utl.pt/docs/roswiki/turtlebot_teleop(2f)Tutorials(2f)TurtleBot(20)Joystick(20)Teleoperation.html -->
 
 
 
