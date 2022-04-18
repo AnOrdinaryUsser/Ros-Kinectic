@@ -63,14 +63,25 @@ pactl -- set-sink-volume 0 500% - Para cambiar el sonido por defecto del ubuntu<
 https://anuragbhandari.com/coding-tech/fixing-headphone-jack-in-ubuntu-20-04-1755/<br> 
 
 ## Http Server with Python
-source ~/venv/bin/activate<br> 
-Go with cd to the folder of the webpage<br> 
-Launch the server with python -m http.server<br> 
-roslaunch rosbridge_server rosbridge_websocket.launch<br> 
+```
+source ~/venv/bin/activate
+```
 
+<br> 
+Go with cd to the folder of the webpage<br>
+<br>  
+Launch a http server with python with this command:<br> 
 
+```
+python -m http.server
+```
 
+<br> 
+Launch a socket for ros:<br> 
 
+```
+roslaunch rosbridge_server rosbridge_websocket.launch
+```
 
 ## Listener to the commands
 python listener.py<br>
