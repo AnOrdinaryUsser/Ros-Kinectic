@@ -84,13 +84,21 @@ roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 
 ## Listener to the commands
-python listener.py<br>
-python go_one_point.py<br>
-rostopic echo/recognizer/output<br>
+```
+python listener.py
+```
+```
+python go_one_point.py
+```
+```
+rostopic echo/recognizer/output
+```
 
 ## ROS2D & NAV2DJS
 To see an arrow with robot_pose, use this command:<br>
-rosrun robot_pose_publisher robot_pose_publisher<br>
+```
+rosrun robot_pose_publisher robot_pose_publisher
+```
 
 ## RosnodeJS
 rosnodejs also provides the ability to dynamically create message classes on the fly without the need to run catkin_make
